@@ -17,3 +17,9 @@ else:
     count = int(math.log10(n)) + 1
 print("Number of digits:", count)
 
+# another solution using string conversion
+from math import *
+n = 5433456789
+def count_digits(n):
+    return int(log10(n)+1)
+print("Number of digits:", count_digits(n))
