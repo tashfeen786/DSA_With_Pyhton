@@ -6,3 +6,14 @@ while num > 0:
     count += 1
     num = num // 10 
 print("Number of digits:", count)
+
+
+# solution to count the number of digits in an integer by logarithmic method
+import math
+n = 543
+if n == 0:
+    count = 1
+else:
+    count = int(math.log10(n)) + 1
+print("Number of digits:", count)
+
