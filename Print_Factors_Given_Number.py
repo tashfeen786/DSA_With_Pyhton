@@ -18,3 +18,15 @@ for i in range(1, num //2):
 result.append(num)  # Include the number itself as a factor
 print("Factors of", num, "are:", result)
 # This code checks if a number is an Armstrong number20
+
+# Optimal solution
+num = int(input("Enter a number: "))
+
+result = []
+from math import sqrt
+for i in range (1, int(sqrt(num)) + 1):
+    if num % i ==0:
+        result.append(i)
+        if num // i !=i:
+            result.append(num // i)
+print(result)
