@@ -1,3 +1,5 @@
+# This code prints the factors of a given number
+# Input: A number from the user
 num = int(input("Enter a number: "))
 # Code to print factors of a given number
 result = []
@@ -6,5 +8,13 @@ for i in range(1, num+1):
         result.append(i)
 
 print("Factors of", num, "are:", result)
+# Better solution 
 
-    
+num = int(input("Enter a number: "))
+result = []
+for i in range(1, num //2):
+    if num % i == 0:
+        result.append(i)
+result.append(num)  # Include the number itself as a factor
+print("Factors of", num, "are:", result)
+# This code checks if a number is an Armstrong number20
