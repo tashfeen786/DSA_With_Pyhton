@@ -8,3 +8,11 @@ for i in range(0, len(nums)):
     else:
         frequency_dict[nums[i]] = 1
 print("Frequency of each number in the list:", frequency_dict)
+
+# Methode 2: 
+
+hash_map = {}
+n = len(nums)
+for i in range(0, n):
+    hash_map[nums[i]] = hash_map.get(nums[i],0)+1
+print("Frequency of each number in the list using hash_map:", hash_map)
