@@ -12,19 +12,19 @@ else:
 
 
 ####
-print(" to check if it is a palindrome:")
-
 class Solution(object):
     def isPalindrome(self, num):
+        if num < 0:
+            return False  # Negative numbers are not palindrome
+
+        original = num
         result = 0
         while num > 0:
-            id = num %10 
-            result = result * 10 + id
-            num = num //10 
-        if n == result:
-            return True
-        else:
-             return False
+            digit = num % 10
+            result = result * 10 + digit
+            num = num // 10
+
+        return original == result
 n = 0
 ob = Solution()
 print(ob.isPalindrome(n))
