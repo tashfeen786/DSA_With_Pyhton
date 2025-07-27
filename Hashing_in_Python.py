@@ -21,5 +21,17 @@ for num in m:
     else:
         print(hash_list[num])
 
+print("Question n0 02")
 
+s= "azyxyyzaaedjdfuiruerjsfsdjkfui"
+q = ["a", "z", "y", "d", "j", "f", "u", "r", "s", "k"]
+
+for char in s:
+    ascii_value = ord(char)
+    index = ascii-97
+    hash_list[index] += 1
+for char in q:
+    ascii_value = ord(char)
+    index = ascii_value - 97
+    print(f"Character {char} occurs {hash_list[index]} times in the string s.")
 
