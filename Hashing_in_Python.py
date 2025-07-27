@@ -12,7 +12,14 @@ for num in m:
 
 print("Optimal solution")
 # Optimal Solution to Count Occurrences of Elements in a List using Hashing 
-
+hash_list = {0} * 11
+for num in n:
+    hash_list[num]+= 1
+for num in m:
+    if num< 1 or num >10: 
+        print(0)
+    else:
+        print(hash_list[num])
 
 
 
